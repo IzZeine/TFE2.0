@@ -1,0 +1,14 @@
+# Meet 7/12 :
+    - profondeur :
+        - quand le requin est en transform(translate) il bug le clip-path
+        - faire un modèle de particles pour la neige marine (un truc assez simple)
+        - faire un clip-path sur toute la zone mais qui laisse les première zone lisible.. en vrai je me comprends
+
+    - croissance :
+        - comment mettre en place le MorphSVG ? (package.json)
+
+    - bones :
+        - vachement lourd comme interinaction vue le nombre de path... et donc de boucles de foreach
+
+    - ampoules :
+        - pourquoi le poisson il me suit partout ? Il est fou ?

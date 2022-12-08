@@ -1,0 +1,201 @@
+/*-----------------------------------------------------
+% Base
+-----------------------------------------------------*/
+
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.test {
+  height: 100vh;
+  width: 100vw;
+}
+
+.fluidimg {
+  max-width: 100%;
+}
+
+/*-----------------------------------------------------
+% Ampoules
+-----------------------------------------------------*/
+
+.test-ampoules {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: aqua;
+}
+
+.img-requin-ampoules {
+  display: block;
+  max-width: 500px;
+}
+
+.img-requin-ampoules-gif {
+  display: none;
+  max-width: 521.5px;
+}
+
+.img-fish-ampoules {
+  position: absolute;
+  max-width: 150px;
+  left: 50%;
+  /* transition: 0.2s; */
+  transform: translate(-50%, -50%);
+}
+
+/*-----------------------------------------------------
+% Croissance
+-----------------------------------------------------*/
+
+.test-croissance {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.click-growth {
+  position: relative;
+  min-width: 100px;
+  max-width: 500px;
+  max-height: 500px;
+  cursor: pointer;
+}
+
+.egg1,
+.egg2,
+.egg3,
+.egg4,
+.shark-growth,
+.rip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.egg2,
+.egg3,
+.egg4 {
+  opacity: 0;
+}
+
+.shark-growth,
+.rip {
+  width: 0;
+}
+
+.click {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  max-height: 200px;
+}
+
+/*-----------------------------------------------------
+% Requin morphing
+-----------------------------------------------------*/
+
+.test-morphing {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.requin-morphing {
+  background-color: red;
+  height: 500px;
+  width: 500px;
+  transition: 1s;
+  /* MorphSVG */
+  clip-path: path(
+    "M18.7399 92.26C18.7399 92.26 22.1399 88 33.2099 79.49C49.7199 106.38 107.93 132.6 110.66 70.98C111.51 37.96 98.0599 28.43 73.5499 29.96L72.5299 25.5301C72.5299 25.5301 43.9299 48.34 37.9799 50.21C49.0399 51.74 63.1699 34.89 71.6799 35.4C105.21 32 116.28 90.72 84.2799 95.14C69.4799 93.99 55.1699 65.86 55.1699 65.86L69.1299 47.48C69.1299 47.48 74.4099 44.08 47.8499 41.18C41.0399 21.44 28.2799 -8.86 7.50992 2.54C-13.2601 13.94 15.8499 58.37 15.8499 58.37C15.8499 58.37 12.7899 94.28 18.7399 92.24V92.26Z"
+  );
+}
+
+/*-----------------------------------------------------
+% Squelette 
+-----------------------------------------------------*/
+
+.test-squelette {
+  background-color: yellow;
+}
+
+.requin-squelette {
+  position: absolute;
+  transform: translate(-50%, 50%);
+  left: 50%;
+}
+
+.bones > g > path {
+  color: black;
+  transition: 0.3s;
+}
+
+.requin-squelette.infos {
+  display: none;
+  transform: translate(15%, -150%);
+  background-color: blue;
+  padding: 12px;
+  opacity: 1;
+}
+
+/*-----------------------------------------------------
+% profondeur
+-----------------------------------------------------*/
+
+.test-profondeur {
+  height: fit-content;
+}
+
+.couche-sup {
+  /* height: 1000vh; */
+  background: linear-gradient(#5ba6a6, #000);
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.couche-sup :nth-child(2n) img,
+.couche-inf-especes :nth-child(2n) img {
+  margin-left: auto;
+  transform: scaleX(-100%);
+}
+
+.couche-inf-especes {
+  /* height: 300vh; */
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  clip-path: ellipse(200px 200px at 0px 0px);
+  background-color: rgba(255, 255, 255, 0.037);
+}
+
+.test-profondeur-especes {
+  max-width: 500px;
+  margin-bottom: 90px;
+  pointer-events: none;
+}
+
+.couche-inf {
+  position: relative;
+}
+
+.couche-inf-bg {
+  z-index: -1;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
