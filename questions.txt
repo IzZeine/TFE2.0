@@ -6,9 +6,13 @@
 
     - croissance :
         - comment mettre en place le MorphSVG ? (package.json)
+        ---> fait, se renseigner mtn
 
     - bones :
         - vachement lourd comme interinaction vue le nombre de path... et donc de boucles de foreach
+        ---> essayer de faire ça avec le CSS -> class "is-active"
+        ---> redessiner le fond en une seule forme pour ne pas avoir plein de tracés
 
     - ampoules :
         - pourquoi le poisson il me suit partout ? Il est fou ?
+        ---> ok

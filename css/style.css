@@ -42,6 +42,7 @@
 }
 
 .img-fish-ampoules {
+  pointer-events: none;
   position: absolute;
   max-width: 150px;
   left: 50%;
